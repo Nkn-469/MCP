@@ -38,4 +38,25 @@ flowchart TD
 
 ```
 
-## 
+## vs codeでのやり方
+1.**F1**を押して```Open User Settings```を入力し、JSONファイルを開く。
+2.```"geminicodeassist.updateChannel": "Insiders",```をsettings.jsonに追加
+ ただしなぜかjsonファイルに改行の```,```がなくなってることがあるので```:```が赤くなった場合確認
+3.右下に**Reload**ってでたら押す
+ ただしでなかっ場合はコマンドパレットに**reload**を入力
+4.GeminiCLIを起動してAgentを有効にする
+5.その後ターミナルを入力する
+```
+(New-ObjectZNet.WebClient).DownloadFile("https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe", "$env:Temp\GoogleCloudSDKInstaller.exe")
+& $env:Temp\GoogleCloudSDKInstaller.exe
+```
+6.その後ダウンロードが始まり設定する
+7.コンソールが起動するので途中で```y/n```って出るので```Y```と入力後Enterを押す
+8.ログインサイトに飛ばされるのでログインする。
+　もし出なかった場合urlが出てるのでそれで調べる
+9.押した後1~5の選択肢が出るのでを選択する
+　[1]が既に存在するプロジェクト
+  [2]が別の既存プロジェクト
+  [3]がまた別のプロジェクト
+  [4]が既存のプロジェクトIDを自分で入力する選択肢
+  [5]が新しくプロジェクトを作成する選択肢
