@@ -49,8 +49,8 @@ flowchart TD
 --------------------------------------
 
 ## Vs Codeでのやり方
-- **1**.**F1**を押して```Open User Settings```を入力し、JSONファイルを開く。</br>
-- **2**.```"geminicodeassist.updateChannel": "Insiders",```をsettings.jsonに追加
+- **1**.**F1**を押して```Open User Settings```を入力し、JSONファイルを開く。
+- **2**.```"geminicodeassist.updateChannel": "Insiders",```をsettings.jsonに追加</br>
   ・(ただしなぜかjsonファイルに改行の```,```がなくなってることがあるので```:```が赤くなった場合確認)
 - **3**.右下に**Reload**ってでたら押す
   ・(ただしでなかっ場合はコマンドパレットに**reload**を入力)
